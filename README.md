@@ -9,10 +9,12 @@ You can simply change the color by changing one of the parameters in their own t
 
 There will be different options to change the fields:
 
--   By changing the text field.
+-   By directly typing.
 -   **?** By scrolling with the scrollwheel.
 -   **?** By clicking and dropping up and down.
 -   **?** By using up and down arrows while the text field is selected.
+
+Color will change while performing the action.
 
 There will also be:
 
