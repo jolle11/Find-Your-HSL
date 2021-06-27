@@ -3,42 +3,42 @@
 const randomBtn = document.querySelector('.random-btn');
 const infoBtn = document.querySelector('.info-btn');
 const copyBtn = document.querySelector('.copy-btn');
-const hInput = document.querySelector('#h-input');
-const sInput = document.querySelector('#s-input');
-const lInput = document.querySelector('#l-input');
+const hInput = document.querySelector('input[name="h-value"]');
+const sInput = document.querySelector('input[name="s-value"]');
+const lInput = document.querySelector('input[name="l-value"]');
 
 // Event Listeners
 
 randomBtn.addEventListener('click', randomColor);
 // infoBtn.addEventListener('click', infoHsl);
 copyBtn.addEventListener('click', copyColor);
+hInput.addEventListener('change', hUpdate);
+sInput.addEventListener('change', hUpdate);
+lInput.addEventListener('change', hUpdate);
 
 // Functions
 
 window.onload = function () {
-    document.querySelector('input[name="h-value"]').value = '';
-    document.querySelector('input[name="s-value"]').value = '';
-    document.querySelector('input[name="l-value"]').value = '';
+    hInput.value = 0;
+    sInput.value = 0;
+    lInput.value = 90;
 };
 
 function randomColor() {
-    let hValue = Math.floor(Math.random() * 361).toString();
-    let newHValue = document.querySelector('input[name="h-value"]');
+    let hValue = Math.floor(Math.random() * 361);
+    let newHValue = hInput;
     newHValue.value = hValue;
-    let sValue = Math.floor(Math.random() * 101).toString();
-    let newSValue = document.querySelector('input[name="s-value"]');
-    newSValue.value = sValue + '%';
-    let lValue = Math.floor(Math.random() * 101).toString();
-    let newLValue = document.querySelector('input[name="l-value"]');
-    newLValue.value = lValue + '%';
+    let sValue = Math.floor(Math.random() * 101);
+    let newSValue = sInput;
+    newSValue.value = sValue;
+    let lValue = Math.floor(Math.random() * 101);
+    let newLValue = lInput;
+    newLValue.value = lValue;
     document.body.style.background = `hsl(${hValue}, ${sValue}%, ${lValue}%)`;
 }
 
 function copyColor() {
-    let hCopy = document.querySelector('input[name="h-value"]').value;
-    let sCopy = document.querySelector('input[name="s-value"]').value;
-    let lCopy = document.querySelector('input[name="l-value"]').value;
-    hslColorCopy = `hsl(${hCopy} , ${sCopy} , ${lCopy})`;
+    hslColorCopy = `hsl(${hInput.value}, ${sInput.value}%, ${lInput.value}%)`;
     let textArea = document.createElement('textarea');
     document.body.appendChild(textArea);
     textArea.style.display = 'hidden';
@@ -47,4 +47,28 @@ function copyColor() {
     document.execCommand('copy');
     document.body.removeChild(textArea);
     alert('Color code copied to the clipboard :D');
+}
+
+function hUpdate() {
+    if (hInput.value >= 0 && hInput.value <= 360) {
+        document.body.style.background = `hsl(${hInput.value}, ${sInput.value}%, ${lInput.value}%)`;
+    } else {
+        alert('Not valid! Must be a number between 0 and 360.');
+    }
+}
+
+function sUpdate() {
+    if (sInput.value >= 0 && sInput.value <= 100) {
+        document.body.style.background = `hsl(${hInput.value}, ${sInput.value}%, ${lInput.value}%)`;
+    } else {
+        alert('Not valid! Must be a number between 0 and 360.');
+    }
+}
+
+function lUpdate() {
+    if (lInput.value >= 0 && lInput.value <= 100) {
+        document.body.style.background = `hsl(${hInput.value}, ${sInput.value}%, ${lInput.value}%)`;
+    } else {
+        alert('Not valid! Must be a number between 0 and 360.');
+    }
 }
