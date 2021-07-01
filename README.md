@@ -12,7 +12,7 @@ There will be different options to change the fields:
 -   By directly typing.
 -   **?** By scrolling with the scrollwheel.
 -   **?** By clicking and dropping up and down.
--   **?** By using up and down arrows while the text field is selected.
+-   By using up and down arrows while the text field is selected.
 
 Color will change while performing the action.
 
@@ -31,7 +31,6 @@ There will also be:
 -   Refactor code.
 -   **?** Automatically change color when scrolling up and down with the scrollwheel.
 -   **?** Automatically change color when click+sliding up and down the corresponding div.
--   **?** Automatically change color when using up and down arrows while the text field is selected.
 
 ## Done:
 
@@ -41,3 +40,11 @@ There will also be:
 -   ~~Reset values on page refresh.~~
 -   ~~Copy button work.~~
 -   ~~Automatically change color when a different value is set in one of the three fields.~~
+-   ~~Color of the and the fonts in the complementary color (related to the background).~~ **I MIGHT CONSIDER ANOTHER OPTION BECAUSE THERE WERE COLORS VERY CLOSE TO EACH OTHER AND THE LETTER VISIBILITY WAS NOT GOOD.**
+-   Automatically change color when using up and down arrows while the text field is selected.
+
+## Cancelled:
+
+---
+
+NONE FOR THE MOMENT.
