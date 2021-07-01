@@ -12,7 +12,16 @@ html {
 body {
     font-family: 'Heebo', sans-serif;
     background: hsl(0, 0%, 90%);
+    color: black;
 }
-li {
-    font-size: 50px;
+
+a {
+    font-size: 5rem;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-size: 5rem;
 }
