@@ -41,7 +41,7 @@ There will also be:
 -   ~~Copy button work.~~
 -   ~~Automatically change color when a different value is set in one of the three fields.~~
 -   ~~Color of the and the fonts in the complementary color (related to the background).~~ **I MIGHT CONSIDER ANOTHER OPTION BECAUSE THERE WERE COLORS VERY CLOSE TO EACH OTHER AND THE LETTER VISIBILITY WAS NOT GOOD.**
--   Automatically change color when using up and down arrows while the text field is selected.
+-   ~~Automatically change color when using up and down arrows while the text field is selected.~~
 
 ## Cancelled:
 
