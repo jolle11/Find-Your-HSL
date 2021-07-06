@@ -12,7 +12,7 @@
             referrerpolicy="no-referrer"
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
         <title>Find Your HSL</title>
     </head>
@@ -33,17 +33,24 @@
         <main>
             <div class="h-div">
                 <p>H</p>
-                <input type="number" name="h-value" id="h-value" placeholder="0" />
+                <div class="percentage">
+                    <input type="number" name="h-value" id="h-value" placeholder="0" />
+                    <p class="small-percentage">deg</p>
+                </div>
             </div>
             <div class="s-div">
                 <p>S</p>
-                <input type="number" name="s-value" id="s-value" placeholder="0" />
-                <p>%</p>
+                <div class="percentage">
+                    <input type="number" name="s-value" id="s-value" placeholder="0" />
+                    <p class="small-percentage">%</p>
+                </div>
             </div>
             <div class="l-div">
                 <p>L</p>
-                <input type="number" name="l-value" id="l-value" placeholder="90" />
-                <p>%</p>
+                <div class="percentage">
+                    <input type="number" name="l-value" id="l-value" placeholder="90" />
+                    <p class="small-percentage">%</p>
+                </div>
             </div>
         </main>
         <script src="/script.js"></script>
