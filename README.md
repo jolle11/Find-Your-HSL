@@ -27,7 +27,7 @@ There will also be:
 ---
 
 -   Info button work.
--   Style the document.
+-   Style the document. >> MOSTLY DONE
 -   Refactor code.
 -   **?** Automatically change color when scrolling up and down with the scrollwheel.
 -   **?** Automatically change color when click+sliding up and down the corresponding div.
