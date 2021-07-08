@@ -1,7 +1,6 @@
 // Selectors
 
 const randomBtn = document.querySelector('.random-btn');
-const infoBtn = document.querySelector('.info-btn');
 const copyBtn = document.querySelector('.copy-btn');
 const hInput = document.querySelector('input[name="h-value"]');
 const sInput = document.querySelector('input[name="s-value"]');
@@ -12,7 +11,6 @@ const aElements = document.querySelectorAll('a');
 // Event Listeners
 
 randomBtn.addEventListener('click', randomColor);
-// infoBtn.addEventListener('click', infoHsl);
 copyBtn.addEventListener('click', copyColor);
 hInput.addEventListener('change', hUpdate);
 sInput.addEventListener('change', sUpdate);
@@ -20,11 +18,18 @@ lInput.addEventListener('change', lUpdate);
 
 // Functions
 
+// Function to make sure every time we load or refresh the page,
+// all three values are reset to the predefined ones.
+
 window.onload = function () {
     hInput.value = 0;
     sInput.value = 0;
     lInput.value = 90;
 };
+
+// The randomColor function makes the random button work,
+// applying a random number from 0 to 360 for the HUE,
+// 0 to 100 for the saturation and 0 to 100 for the lightness.
 
 function randomColor() {
     let hValue = Math.floor(Math.random() * 361);
@@ -40,6 +45,9 @@ function randomColor() {
     compColor();
 }
 
+// The copyColor function copies the color displayed in the correct format >> hsl(XXX, XXX%, XXX%)
+// Ready to paste in your editor.
+
 function copyColor() {
     hslColorCopy = `hsl(${hInput.value}, ${sInput.value}%, ${lInput.value}%)`;
     let textArea = document.createElement('textarea');
@@ -51,6 +59,10 @@ function copyColor() {
     document.body.removeChild(textArea);
     alert('Color code copied to the clipboard :D');
 }
+
+// The next 3 functions (hUpdate, sUpdate and lUpdate) work the same way.
+// The color is updated when you modify one of the values separately.
+// It also gives you an alert if the value is not correct for each field.
 
 function hUpdate() {
     console.log(hInput.value);
@@ -81,6 +93,9 @@ function lUpdate() {
         alert('Not valid! Must be a number between 0 and 100.');
     }
 }
+
+// The compColor function modifies the color of the icons and letters on the screen
+// with the complementary color of the generated for the background.
 
 function compColor() {
     let bbg = `hsl(${hInput.value}, ${sInput.value}%, ${lInput.value}%)`;
