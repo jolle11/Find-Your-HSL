@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;900&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="style.css" />
-        <title>Find Your HSL</title>
-    </head>
-    <body>
-        <header>
-            <ul>
-                <li>
-                    <a href="#" class="random-btn"><i class="fas fa-random"></i></a>
-                </li>
-                <li>
-                    <a href="https://en.wikipedia.org/wiki/HSL_and_HSV" target="_blank" class="info-btn"
-                        ><i class="fas fa-info-circle"></i
-                    ></a>
-                </li>
-                <li>
-                    <a href="#" class="copy-btn"><i class="far fa-copy"></i></a>
-                </li>
-            </ul>
-        </header>
-        <main>
-            <div class="h-div">
-                <p>H</p>
-                <div class="percentage">
-                    <input type="number" name="h-value" id="h-value" placeholder="0" />
-                    <p class="small-percentage">deg</p>
-                </div>
-            </div>
-            <div class="s-div">
-                <p>S</p>
-                <div class="percentage">
-                    <input type="number" name="s-value" id="s-value" placeholder="0" />
-                    <p class="small-percentage">%</p>
-                </div>
-            </div>
-            <div class="l-div">
-                <p>L</p>
-                <div class="percentage">
-                    <input type="number" name="l-value" id="l-value" placeholder="90" />
-                    <p class="small-percentage">%</p>
-                </div>
-            </div>
-        </main>
-        <script src="/script.js"></script>
-    </body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;900&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Find Your HSL</title>
+</head>
+
+<body>
+	<header>
+		<ul>
+			<li>
+				<a href="#" class="random-btn"><i class="fas fa-random"></i></a>
+			</li>
+			<li>
+				<a href="https://en.wikipedia.org/wiki/HSL_and_HSV" target="_blank" class="info-btn"><i
+						class="fas fa-info-circle"></i></a>
+			</li>
+			<li>
+				<a href="#" class="copy-btn"><i class="far fa-copy"></i></a>
+			</li>
+		</ul>
+	</header>
+	<main>
+		<div class="h-div">
+			<p>H</p>
+			<div class="percentage">
+				<input type="number" name="h-value" id="h-value" placeholder="0" />
+				<p class="small-percentage">deg</p>
+			</div>
+		</div>
+		<div class="s-div">
+			<p>S</p>
+			<div class="percentage">
+				<input type="number" name="s-value" id="s-value" placeholder="0" />
+				<p class="small-percentage">%</p>
+			</div>
+		</div>
+		<div class="l-div">
+			<p>L</p>
+			<div class="percentage">
+				<input type="number" name="l-value" id="l-value" placeholder="90" />
+				<p class="small-percentage">%</p>
+			</div>
+		</div>
+	</main>
+	<script src="/script.js"></script>
+</body>
+
 </html>
